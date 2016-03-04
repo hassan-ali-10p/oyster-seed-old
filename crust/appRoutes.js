@@ -5,6 +5,8 @@ function appRoutes(app){
 
     app.use("/api/v1/users", routes.users);
 
+    app.use("/api/v1/posts", routes.posts);
+
 }
 
 module.exports = appRoutes;
