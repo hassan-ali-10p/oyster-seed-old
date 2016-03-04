@@ -1,10 +1,12 @@
-var PostFacade = require("../../lib/facade/posts");
+"use strict";
+ 
+ var PostFacade = require("../../lib/facade/posts");
 
 function index(req, res, next){
   var postFacade = new PostFacade(req);
 
-  postFacade.index(req.getInputObject()).then(function(output){
-      res.status(200).send(global.shape(output))
+  postFacade.index().then(function(output){
+      res.status(200).send(global.shape(output));
   }).catch(function(e){
       next(e);
   });
@@ -15,7 +17,7 @@ function show(req, res, next){
   var postFacade = new PostFacade(req);
 
   postFacade.show(req.getInputObject()).then(function(output){
-      res.status(200).send(global.shape(output))
+      res.status(200).send(global.shape(output));
   }).catch(function(e){
       next(e);
   });

@@ -1,5 +1,7 @@
+"use strict";
+
 var postController = require("../../controllers/posts");
-var router = require('express').Router();
+var router = require("express").Router();
 
 router.get("/searchByTitle", postController.searchByTitle);
 

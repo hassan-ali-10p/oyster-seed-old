@@ -1,3 +1,5 @@
+"use strict";
+
 var routes = require("./routes/v1/index")();
 function appRoutes(app){
 
