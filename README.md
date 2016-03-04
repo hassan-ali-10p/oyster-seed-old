@@ -1,22 +1,20 @@
-oyster-seed
-===========
+# Blog Api #
 
-Project initial template that based on oyster recommended structure to build node apps
+A RestFull Api which have a resource named "post"
 
-Log Folders/File
-===========
-info
+<b>Restful Routes</b>
+* GET     api/v1/posts/
+* GET     api/v1/posts/:id
+* POST    api/v1/posts/
+* PUT     api/v1/posts/:id
+* DELETE  api/v1/posts/:id
 
---info.log
+<b>Extra Routes</b>
+* DELETE  api/v1/posts/
+* GET     api/v1/posts/searchByTitle
 
-crashes
 
---crashes.log
-
-errors
-
---errors.log
-
-web
-
---web.log
+<b>Post Model</b>
+Needs two fields
+* title
+* description
