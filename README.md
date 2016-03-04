@@ -18,3 +18,5 @@ A RestFull Api which have a resource named "post"
 Needs two fields
 * title
 * description
+
+Uses <b>Mongo</b> DB
