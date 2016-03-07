@@ -31,6 +31,7 @@ app.set("views", __dirname + "/public/views"); // setting view path
 app.set("view engine", "html");
 
 app.use(express.static(__dirname + "/public")); //for static files to serve directly.
+app.use('/apidoc', express.static('doc'));
 app.use(global.Packages.Oyster.Middleware.allow_ajax); // allowing app to deal with ajax calls
 app.engine("html", require("ejs").renderFile); //mapping html to ejs renderer for rendering html files
 app.use(global.Packages.Oyster.Middleware.param_object); // this middleware add method "" in request object that iterates all params in request object and create object

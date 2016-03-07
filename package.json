@@ -34,6 +34,7 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/grunt test",
-    "start": "nodemon --debug crust/server.js"
+    "start": "nodemon --debug crust/server.js",
+    "docs": "apidoc -i crust/controllers/ -o doc/"
   }
 }

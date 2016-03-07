@@ -22,5 +22,5 @@ Needs two fields
 Uses <b>Mongo</b> DB
 
 # Api Doc #
-To View Api Doc Run following command at the root of app
-"./doc.sh"
+* npm run docs
+* then visit "localhost:3000/apidoc"
