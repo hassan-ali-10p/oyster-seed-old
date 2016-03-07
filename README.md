@@ -20,3 +20,7 @@ Needs two fields
 * description
 
 Uses <b>Mongo</b> DB
+
+<b>Api Doc</b>
+Run following command at the root of app
+"./doc.sh"
