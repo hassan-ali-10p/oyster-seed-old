@@ -21,6 +21,6 @@ Needs two fields
 
 Uses <b>Mongo</b> DB
 
-<b>Api Doc</b>
-* To View Api Doc Run following command at the root of app
+# Api Doc #
+To View Api Doc Run following command at the root of app
 "./doc.sh"
