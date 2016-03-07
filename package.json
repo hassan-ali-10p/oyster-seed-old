@@ -3,17 +3,18 @@
   "private": true,
   "version": "0.0.1",
   "dependencies": {
+    "apidoc": "^0.15.1",
     "apn": "~1.7.4",
     "batch-request": "~0.1.1",
     "bluebird": "~2.9.34",
-    "ejs": "~2.3.3",
     "body-parser": "~1.13.3",
-    "method-override": "~2.3.5",
+    "ejs": "~2.3.3",
     "express": "~4.13.3",
     "lodash": "~3.10.1",
+    "method-override": "~2.3.5",
     "moment": "~2.10.6",
-    "request": "~2.61.0",
-	"node-oyster" : "git+https://github.com/faizulhaque/oyster.git"
+    "node-oyster": "git+https://github.com/faizulhaque/oyster.git",
+    "request": "~2.61.0"
   },
   "devDependencies": {
     "grunt-cli": "~0.1.11",
@@ -32,6 +33,7 @@
     "grunt-concurrent": "~0.4.3"
   },
   "scripts": {
-    "test": "./node_modules/.bin/grunt test"
+    "test": "./node_modules/.bin/grunt test",
+    "start": "nodemon --debug crust/server.js"
   }
 }
