@@ -24,3 +24,7 @@ Uses <b>Mongo</b> DB
 # Api Doc #
 * npm run docs
 * then visit "localhost:3000/apidoc"
+
+# Tests #
+* frisby package is used
+* To execute tests run "jasmine-node crust/tests/"
