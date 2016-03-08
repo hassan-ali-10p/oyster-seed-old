@@ -22,6 +22,5 @@ frisby.create("hello test 2")
   .get("http://localhost:3000/api/v1/posts")
   .expectStatus(200)
   .expectJSONTypes("results.*", {title: String, description: String, id: String})
-
 .toss();
 
