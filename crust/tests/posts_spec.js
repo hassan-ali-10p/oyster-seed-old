@@ -97,3 +97,23 @@ frisby.create("should search post by title")
     ]
   })
 .toss();
+
+// should compare the object
+var title="samsungj5";
+var description="nycPhone";
+frisby.create("should create post and then compare the newly created post by fetching it")
+  .post("http://localhost:3000/api/v1/posts?title=" + title + "&description=" + description)
+  .expectStatus(200)
+  .afterJSON(function(response){
+    var NewlyCreatedObjId = response.results.upserted[0]._id;
+    frisby.create("get newly created object")
+      .get("http://localhost:3000/api/v1/posts/" + NewlyCreatedObjId )
+      .expectStatus(200)
+      .afterJSON(function(response){
+        expect(NewlyCreatedObjId).toEqual(response.results.id)
+        expect(title).toEqual(response.results.title)
+        expect(description).toEqual(response.results.description)
+      })
+    .toss()
+  })
+.toss();
