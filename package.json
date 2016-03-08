@@ -17,23 +17,22 @@
     "request": "~2.61.0"
   },
   "devDependencies": {
-    "grunt-cli": "~0.1.11",
+    "chai-as-promised": "~4.1.0",
+    "frisby": "^0.8.5",
     "grunt": "~0.4.2",
-    "grunt-contrib-watch": "~0.5.3",
-    "mocha": "~1.16.2",
+    "grunt-cli": "~0.1.11",
+    "grunt-concurrent": "~0.4.3",
     "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-newer": "~0.6.1",
+    "jshint-stylish": "~0.1.5",
+    "load-grunt-tasks": "~0.3.0",
     "sinon": "~1.7.3",
     "supertest": "~0.8.2",
-    "chai-as-promised": "~4.1.0",
-    "grunt-mocha-test": "~0.8.1",
-    "jshint-stylish": "~0.1.5",
-    "grunt-newer": "~0.6.1",
-    "load-grunt-tasks": "~0.3.0",
-    "time-grunt": "~0.2.9",
-    "grunt-concurrent": "~0.4.3"
+    "time-grunt": "~0.2.9"
   },
   "scripts": {
-    "test": "./node_modules/.bin/grunt test",
+    // "test": "./node_modules/.bin/grunt test",
     "start": "nodemon --debug crust/server.js",
     "docs": "apidoc -i crust/controllers/ -o doc/"
   }
