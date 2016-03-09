@@ -1,0 +1,9 @@
+{
+  "dev": {
+    "driver": "mysql",
+    "user": {"ENV": "DEVELOPMENT_USERNAME"},
+    "password": {"ENV": "DEVELOPMENT_PASSWORD"},
+    "database": "oyster_seed_old_dev",
+    "multipleStatements": true
+  }
+}

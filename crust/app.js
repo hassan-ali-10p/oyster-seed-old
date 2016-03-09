@@ -7,6 +7,7 @@ global.Packages.Oyster.Utils.logger("app_name"); //setting up logger info
 
 
 // all environments
+require('dotenv').config();   // dotenv enviroment
 app.set("title", "Oyster-Seed");
 process.env.PORT = config.port;
 
